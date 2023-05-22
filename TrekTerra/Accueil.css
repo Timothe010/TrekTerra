@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    background: #E9E2D3;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Manrope';
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-title-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-title-header img{
+    width: 50px;
+    height: 50px;
+}
+
+.header-h1{
+    font-family: 'Manrope';
+    font-weight: 600;
+}
+
+nav{
+    width: 500px;
+    padding-top: 15px;
+    padding-left: 5%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.50s;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+nav ul li:hover{
+    border-bottom:#5f957d solid 1px;
+    padding: 10px 0px;
+    transition: 1s;
+}
+
+nav ul li a:hover{
+    color: #5f957d;
+}
+
+.buttom-header{
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    transition: 0.5s;
+    border: solid #031d1b 3px;
+    cursor: pointer;
+}
+
+.buttom-header:hover{
+    width: 150px;
+    background-color: #031d1b;
+    color: white;
+}
+
+.buttom-header::after{
+    background-color: #463c3c;
+    transition: 0.5s;
+}
+
+.buttom-header a:hover{
+    color: white;
+    transition: 0.50s;
+}
+
+.buttom-header a{
+    text-decoration: none;
+    color: black;
+    transition: 0.50s;
+    padding: 20px 20px; /*pour le changer le padding du buttom*/
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+.main-header{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+}
+.left-h1-p{
+    width: 40%;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 4.2em;
+    padding-top: 200px;
+}
+
+p{
+    font-size: 1.4em;
+    padding-top: 40px;
+}
+
+.main-header-buttem{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    transition: 0.5s;
+    border: solid #031d1b 3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    margin-top: 50px;
+}
+.main-header-buttem:hover{
+    width: 150px;
+    background-color: #031d1b;
+    color: white;
+}
+
+.main-header-buttem::after{
+    background-color: #463c3c;
+    transition: 0.5s;
+}
+
+.main-header-buttem a:hover{
+    color: white;
+    transition: 0.50s;
+}
+
+.main-header-buttem a{
+    text-decoration: none;
+    color: black;
+    transition: 0.50s;
+    padding: 10px 10px; /*pour le changer le padding du buttom*/
+}
+
+
+.photo-box{
+    position: relative;
+}
+
+.box-1{
+    width: 350px;
+    height: 350px;
+    background-color: #031d1b; 
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 18%;
+    margin-right: 500px; /*pour le changer de position*/
+}
+
+.photo{
+    margin: 50px 0px 0px 300px; /*pour le changer de position*/
+    width: 700px;
+    height: 700px;
+    background-color: #463c3c;
+    border-radius: 50%;
+    background: url(image/photo\ bretagne\ me.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.box-3-2{
+position: relative;
+}
+
+.box-2{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    margin: -60px 0px 0px 0px;
+    z-index: -1;
+    width: 500px;
+    height: 100px;
+    background-color: #000;
+    --mask:
+    radial-gradient(55.15px at 50% calc(100% + 43.40px),#0000 calc(99% - 7px),#000 calc(101% - 7px) 99%,#0000 101%) calc(50% - 56px) calc(50% - 17.5px + .5px)/112px 35px ,
+    radial-gradient(55.15px at 50% -43.4px,#0000 calc(99% - 7px),#000 calc(101% - 7px) 99%,#0000 101%) 50% calc(50% + 17.5px)/112px 35px ;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+.box-3{
+    width: 100px;
+    height: 100px;
+    background-color: #031d1bbe;
+    border-radius: 50%;
+    position: absolute;  /*pour le changer de position*/
+    top: -50%;
+    left: 90%;
+}
